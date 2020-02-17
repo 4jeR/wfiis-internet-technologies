@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="author" content="Bartłomiej Długosz">
+
+    <title>Projekt 1 - techniki internetowe 2019/2020</title>
+    <link rel = "stylesheet" href = "style/style.css" type = "text/css" />
+    <script src = "js/draw_canvas.js"></script>
+
+
+
+
+</head>
+<body onload = "draw_canvas_zzp()">
+    <img id="canvas_img" width="300" height="300" src="img/zzp.png"
+    style="display: none;">
+
+    <div id = "topper">
+        <h2>Zasada zachowania pędu</h2>
+    </div>
+    <div id = "container">
+
+        <div id ="nav">
+            <div class = "nav_tile_mainpage">
+                <a href = "index.html" class = "tilelink"><b>strona główna</b></a>
+            </div>
+            <br/>
+            <div class = "nav_tile_zzp">
+                <a href = "newton_pend.html" class = "tilelink"><b>wahadło Newtona</b></a>
+            </div>
+            <br/>
+
+            <div class = "nav_tile_newton">
+                <a href = "newton.html" class = "tilelink"><b>Isaac Newton</b></a>
+            </div>
+
+            <div class = "nav_tile_newton">
+                <a href = "doc.html" class = "tilelink"><b>Dokumentacja</b></a>
+            </div>
+        </div>
+        
+        <div id = "content">
+            <h2></h2>
+            
+            <h3>Zderzenie sprężyste – zderzenie, w którym w stanie końcowym mamy te 
+                same cząstki (obiekty) co w stanie początkowym i zachowana jest energia kinetyczna. 
+                W fizyce zderzenia analizuje się opisując stan ciał przed i po zderzeniu nie wnikając 
+                w szczegóły oddziaływania w trakcie zderzenia. Zderzenie, w którym energia kinetyczna 
+                nie jest zachowana nazywa się zderzeniem niesprężystym.</h3>
+                
+            <br/><fieldset id = "zzp_wzor">
+                <legend> <b>Prawo</b> </legend>
+                <h3>Zasada zachowania pędu - suma wektorowa pędów wszystkich elementów układu
+                                         izolowanego pozostaje stała.</h3>
+            </fieldset>
+
+            <h2>Animacje </h2>   
+            <article>
+                <h3>Poniżej przedstawione zostały animacje zasady zachowania pędu:</h3>
+            </article>
+            <br/><b>Zderzenie idealnie sprężyste - brak strat energii w układzie </b><br/><br/>
+            <canvas id="anim"></canvas>
+            <script src = "js/animation_zzp1.js"></script><br/>
+            
+
+            <br/><b>a) przed: V1 = v, V2 = 0 
+                          po: V1 = 0, V2 = v</b><br/>
+            <br/><b>b) przed: V1 = v1, V2 = -v2 
+                            po: V1 = -v2, V2 = v1</b><br/>
+            <br/><b>c) przed: V1 = v1, V2 = -v1 
+                            po: V1 = 0, V2 = 0</b><br/>
+            <br/><b>d) przed: V1 = v1, V2 = v2 
+                            po: V1 = v2, V2 = v1</b><br/>
+
+            <br/><b>Zderzenie niesprężyste - występują straty energii w układzie</b><br/><br/>
+            <canvas id="anim2"></canvas>
+            <script src = "js/animation_zzp2.js"></script><br/>
+            
+            <br/>
+                
+        </div>
+        <div id = "image">
+            <canvas id="canvas">
+            </canvas>
+            
+        </div>
+
+        <div id = "footer">
+            <b>Techniki internetowe projekt 1 - Bartłomiej Długosz &copy; Wszelkie prawa zastrzeżone.</b>
+        </div>
+        <div id = "u_footer"></div>
+    </div>
+</body>
+</html>

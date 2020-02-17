@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="author" content="Bartłomiej Długosz">
+
+    <title>Projekt 1 - techniki internetowe 2019/2020</title>
+    <link rel = "stylesheet" href = "style/style.css" type = "text/css" />
+    <script src = "js/draw_canvas.js"></script>
+
+
+
+
+</head>
+<body onload = "draw_canvas_pend()">
+    <img id="canvas_img" width="255" height="255" src="img/wahadlo_newtona2.png"
+    style="display: none;">
+
+    <div id = "topper">
+        <h2>Wahadło Newtona</h2>
+    </div>
+    <div id = "container">
+
+        <div id ="nav">
+            <div class = "nav_tile_mainpage">
+                <a href = "index.html" class = "tilelink"><b>strona główna</b></a>
+            </div>
+            <br/>
+            <div class = "nav_tile_zzp">
+                <a href = "newton_pend.html" class = "tilelink"><b>wahadło Newtona</b></a>
+            </div>
+            <br/>
+
+            <div class = "nav_tile_newton">
+                <a href = "newton.html" class = "tilelink"><b>Isaac Newton</b></a>
+            </div>
+
+            <div class = "nav_tile_newton">
+                <a href = "doc.html" class = "tilelink"><b>Dokumentacja</b></a>
+            </div>
+        </div>
+        
+
+
+        
+
+        <div id = "content">
+            <h3><u>Kołyska Newtona, wahadło Newtona </u>- przyrząd, który ilustruje prawo 
+                zachowania pędu i energii podczas sprężystego zderzenia kul.<br/></h3> 
+            
+            <b><u>Opis działania</u><br/><br/></b> 
+
+            
+            <article>
+                <h3>
+                Na nitkach zawieszony jest rząd kilku stykających się ze sobą jednakowych stalowych kulek, 
+                które mogą wykonywać wahania tylko w jednej, wspólnej płaszczyźnie (ilustracja). 
+                Gdy jedna z nich zostanie odchylona i puszczona, jej uderzenie w pozostałe kulki spowoduje, 
+                że po przeciwnej stronie szeregu odskoczy tylko ostatnia kulka. Jej wychylenie będzie 
+                prawie takie samo jak pierwszej. Analogicznie, gdy podniesiemy i puścimy dwie kulki, 
+                z drugiego końca odskoczą również dwie kule. Ogólnie rzecz biorąc - tyle samo kulek 
+                odskoczy na końcu szeregu, ile odchylimy na jego początku, zaś pozostałe, środkowe kulki 
+                pozostaną nieruchome.
+                </h3>
+            </article>
+        </br>
+            
+                
+            
+            <br/><b>Wahadło Newtona</b>
+            <article>
+                Zderzenia kulek są prawie doskonale sprężyste. Przy takim zderzeniu zachowana jest 
+                energia kinetyczna zderzających się ciał. Z zasady zachowania energii i zasady 
+                zachowania pędu wynika, przy założeniu, że masy obu ciał są takie same, a pierwsze 
+                ciało się poruszało, podczas gdy drugie było nieruchome, że po zderzeniu pierwsze 
+                ciało zatrzymuje się, a drugie porusza z taką prędkością, jaką miało pierwsze ciało. 
+                W ten sposób pęd przekazywany jest kolejnym kulkom, które przekazują go następnej, 
+                zanim zaczną się poruszać. Dopiero ostatnia kulka, nie mogąc przekazać pędu dalej, 
+                sama zaczyna się poruszać. Proces przekazywania pędu przebiega bardzo szybko, 
+                niezauważalnie dla obserwatora. Dla stalowych kulek prędkość przekazu pędu równa 
+                jest prędkości podłużnej fali mechanicznej w stali, czyli około 6 km/s.
+            </article>
+            <br/>
+        </div>
+
+        
+
+        <div id = "image">
+            <canvas id="canvas" width="380" height="700" ></canvas>
+        </div>
+        
+        <div id = "footer">
+            <b>Techniki internetowe projekt 1 - Bartłomiej Długosz &copy; Wszelkie prawa zastrzeżone.</b>
+        </div>
+        <div id = "u_footer"></div>
+    </div>
+</body>
+</html>

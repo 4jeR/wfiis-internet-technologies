@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="author" content="Bartłomiej Długosz">
+
+    <title>Projekt 1 - techniki internetowe 2019/2020</title>
+    <link rel = "stylesheet" href = "style/style.css" type = "text/css" />
+    <script src = "js/draw_canvas.js"></script>
+
+
+
+
+</head>
+<body onload = "draw_canvas()">
+    <img id="canvas_img" width="355" height="355" src="img/newton.jpg"
+    style="display: none;">
+
+    <div id = "topper">
+        <h2>Dokumentacja</h2>
+    </div>
+    <div id = "container">
+        <div id ="nav">
+            <div class = "nav_tile_mainpage">
+                <a href = "index.html" class = "tilelink"><b>strona główna</b></a>
+            </div>
+            <br/>
+            <div class = "nav_tile_zzp">
+                <a href = "newton_pend.html" class = "tilelink"><b>wahadło Newtona</b></a>
+            </div>
+            <br/>
+
+            <div class = "nav_tile_newton">
+                <a href = "newton.html" class = "tilelink"><b>Isaac Newton</b></a>
+            </div>
+
+            <div class = "nav_tile_newton">
+                <a href = "doc.html" class = "tilelink"><b>Dokumentacja</b></a>
+            </div>
+        </div>
+    
+
+        <div id = "content">
+            <h1>Użyte technologie</h1>
+            <article>
+                <h4>
+                    Projekt został wykonany przy użyciu technologii HTML5 z wykorzystaniem CSS3 oraz języka JavaScript.<br/><br/>
+                    Animacja przedstawiająca zderzenia została wykonana w technologii canvas.<br/><br/>
+                    Dźwięki zderzeń zostały odtworzone przy użyciu języka JavaScript, dźwięki zostały pobrane ze strony <a href = "https://freesound.org/">LINK</a><br/>
+                    Do obsługi zdarzeń i operacji na własnościach styli wykorzystane zostały takie metody jak onload, 
+                    a także własności style, getElementById. <br/><br/>
+                    Wykorzystane znaczniki języka HTML5: div, nav, article, header, fieldset oraz footer. 
+    
+                </h4>
+            </article>
+        </div>
+        <div id = "image">
+            <canvas id="canvas" width="225" height="225" >
+            </canvas>
+        </div>
+
+        <div id = "footer">
+            <b>Techniki internetowe projekt 1 - Bartłomiej Długosz &copy; Wszelkie prawa zastrzeżone.</b>
+        </div>
+        <div id = "u_footer"></div>
+    </div>
+</body>
+</html>
