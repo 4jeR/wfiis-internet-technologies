@@ -1,0 +1,105 @@
+header{
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  padding: 2%;
+  background-color: rgb(196, 140, 10);
+  border: 1px solid black;
+}
+
+footer{
+  color:  black;
+  font-size: 14px;
+  text-align: center;
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid black;
+  background-color: rgb(255, 179, 0);
+}
+
+body{
+  background-image: url("image.jpg");
+  background-size: 130% ;
+  background-color: rgb(235, 174, 34);
+  opacity: 80%;
+  border: 1px solid black;
+}
+
+  
+
+
+
+nav{
+  background-color: rgb(255, 180, 0);
+  display:block;
+}
+
+#a7,#a6,#a3{
+  display: none;
+}
+
+a{
+
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+a.active {
+  background-color: #555;
+  color: black;
+}
+
+a:hover:not(.active) {
+  background-color: #555;
+  color: black;
+}
+
+div{
+  text-align: center;
+  margin-left:auto;
+margin-right:auto;
+
+}
+
+
+
+#content{
+  padding: 0%;
+  text-align: center;
+  background-color: rgb(252, 247, 0);
+  position: fixed;
+  animation-name: example;
+  animation-duration: 1s;
+  margin-left: 50%;
+  margin-top: 5%;
+  display: block;
+  animation-fill-mode: forwards;
+  border: 2px solid black;
+}
+
+table, th, td {
+  width:100%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+#graph1{float:left;
+  margin-left: 23%;
+  margin-top: 6%;
+}
+#graph2{float:left;
+  margin-top: 6%;
+  margin-left: 2%;
+}
+
